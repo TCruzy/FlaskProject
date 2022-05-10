@@ -1,0 +1,354 @@
+body {
+    background-color: #1d5297;
+    text-align: center;
+    
+}
+
+.reg {
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 40px;
+}
+
+.form {
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 20px;
+}
+
+.form1 {
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 20px;
+}
+
+.log{
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 40px;
+}
+
+.error {
+    /* set this class to the center of screen*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 45px;
+    color: red;
+}
+
+
+table, th, td
+{
+    border-collapse: separate;
+    border-spacing:0.1px;
+    border-style: solid;
+    border-width:thin;
+}
+
+tr, th, td  {
+    background: #fff;
+    padding : 10px 40px;
+}
+
+.hello {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    Align-items: center;        
+    display: flex;
+    Justify-content: center;
+}
+.admin {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    Align-items: center;        
+    display: flex;
+    Justify-content: center;
+}
+
+.error500 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'BPG Nino Mtavruli';
+    font-size: 45px;
+    color: red;
+}
+.main-navigation {
+    font-family: 'BPG Nino Mtavruli';
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  
+  .main-header {
+    top: 0;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(35, 35, 35, 0.8);
+    z-index: 11; }
+    .main-header .container {
+      font-family: "Source Sans Pro Bold", sans-serif;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      /* useless css */ }
+      .main-header .container h2 {
+        font-size: 16px;
+        color: white; }
+        @media (max-width: 810px) {
+          .main-header .container h2 {
+            font-size: 12px; } }
+      .main-header .container .main-navigation {
+        height: 0px;
+        transition: 1s height;
+        text-transform: uppercase;
+        display: flex;
+  }
+        .main-header .container .main-navigation.active {
+          display: block;
+          width: 300vw;
+          height: auto;
+          text-align: right;
+          padding-top: 30px; }
+          .main-header .container .main-navigation.active li {
+            padding-bottom: 20px; }
+        .main-header .container .main-navigation li {
+          padding: 0 20px; }
+          .main-header .container .main-navigation li a {
+            font-size: 16px;
+            color: white;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+            .main-header .container .main-navigation li a:hover {
+              color: #E64A19; }
+          @media (max-width: 1120px) {
+            .main-header .container .main-navigation li {
+              padding: 0 10px; } }
+        @media (max-width: 768px) {
+          .main-header .container .main-navigation {
+            display: none; } }
+      .main-header .container .burger-menu {
+        position: relative;
+        right: 0;
+        width: 20px;
+        height: 10px;
+        cursor: pointer;
+        display: none; }
+        @media (max-width: 768px) {
+          .main-header .container .burger-menu {
+            display: block; } }
+      .main-header .container .burger {
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 3px;
+        top: 50%;
+        right: 0px;
+        opacity: 1; }
+      .main-header .container .burger::before {
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 3px;
+        top: 5px;
+        content: "";
+        display: block; }
+      .main-header .container .burger::after {
+        position: absolute;
+        background: white;
+        width: 100%;
+        height: 3px;
+        bottom: 5px;
+        content: "";
+        display: block; }
+      .main-header .container .burger::after, .main-header .container .burger::before, .main-header .container .burger {
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out; }
+      .main-header .container .burger-menu.menu-on .burger::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        bottom: 0px; }
+      .main-header .container .burger-menu.menu-on .burger::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        top: 0px; }
+      .main-header .container .burger-menu.menu-on .burger {
+        background: rgba(111, 111, 111, 0);
+        width: 22px; }
+      .main-header .container h1 {
+        font-family: arial;
+        letter-spacing: 4px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #666;
+        text-align: center;
+        margin: 60px 0px 60px 0px; }
+      .main-header .container .big {
+        letter-spacing: 0px;
+        font-size: 51px;
+        display: block;
+        text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .main-header {
+        padding: 10px; } }
+  
+  .burger {
+    display: none; }
+    @media (max-width: 768px) {
+      .burger {
+        display: block; } }
+
+main {
+    margin-top: 20px;
+}
+
+.containerr {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .form-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact input[type="password"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact input[type="password"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact input[type="password"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"], .navigate {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  
+  :-moz-placeholder {
+    color: #888;
+  }
+  
+  ::-moz-placeholder {
+    color: #888;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
