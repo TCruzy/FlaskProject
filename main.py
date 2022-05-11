@@ -85,7 +85,7 @@ def registerinfo():
         password = request.args.get('password')
         c.execute("SELECT * FROM users WHERE email = ?", (mail,))
         if len(c.fetchall()) > 0:
-            return "Email already exists"
+            return "Email already exists!"
         else:
             print(len(c.fetchall()))
             c.execute("INSERT INTO users VALUES(?, ?, ?)", (name, mail, password))
