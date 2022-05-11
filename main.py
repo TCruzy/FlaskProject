@@ -1,6 +1,3 @@
-
-from crypt import methods
-from email import message
 from flask import Flask,redirect, url_for, request, render_template
 import sqlite3
 from flask_wtf import FlaskForm
