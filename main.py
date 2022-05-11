@@ -11,7 +11,7 @@ conn.commit()
 
 
 
-""" HTTP methods using GET and POST """
+""" HTTP methods using GET and POST  """
 @app.route('/login')
 def auth():
     return render_template('login.html')
