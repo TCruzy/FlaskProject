@@ -93,9 +93,6 @@ def registerinfo():
             return redirect(url_for('auth'))
 
 
-@app.route('/hello', methods=['POST'])
-def hello():
-    return "Hello Ioseb"
 # page not found 404
 @app.errorhandler(404)
 def page_not_found(e):
@@ -107,4 +104,4 @@ def internal_server_error(e):
     return render_template('500.html'), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=7777, host='0.0.0.0')
+    app.run(debug=True)
